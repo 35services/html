@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spenden</title>
+</head>
+<body>
+<dialog style="
+    width: 540px; /* Increased size to accommodate padding and border */
+    max-width: 90vw; /* Make it responsive */
+    height: 540px; 
+    padding: 0; /* Remove dialog padding so iframe and button are at the edge */
+    ">
+<button style="
+
+        top: 0;              /* 👈 Align to top edge */
+        right: 0;            /* 👈 Align to right edge */
+        padding: 5px 10px;
+        border: none;
+        font-weight: bold;
+        position: absolute;  /* 👈 Take it out of normal flow */
+        z-index: 10;         /* 👈 Ensure it is above the iframe */
+    " onclick="this.closest('dialog').close()">x</button>
+   <div id="betterplace_donation_iframe" style="background: transparent url('https://www.betterplace.org/assets/new_spinner.gif') 275px 20px no-repeat;">
+       <strong><a href="https://www.betterplace.org/de/donate/platform/projects/138560-3d-druck-und-elektronik-ag">Jetzt Spenden für „3D-Druck und Elektronik AG" bei unserem Partner betterplace.org</a></strong>
+   </div>
+   <script src="https://www.betterplace.org/de/projects/138560-3d-druck-und-elektronik-ag/iframe_donation_form.js"></script>
+</dialog>
+<button onclick="document.querySelector('dialog').showModal()"
+style="
+    width: 540px; /* Increased size to accommodate padding and border */
+    max-width: 90vw; /* Make it responsive */
+    ">🙏 Direkt Spenden 🙏</button>
+</body>
+</html>
