@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spenden</title>
+</head>
+<body>
+<dialog style="
+    width: 540px; /* Increased size to accommodate padding and border */
+    max-width: 90vw; /* Make it responsive */
+    height: 540px; 
+    padding: 0; /* Remove dialog padding so iframe and button are at the edge */
+    ">
+<button style="
+
+        top: 0;              /* 👈 Align to top edge */
+        right: 0;            /* 👈 Align to right edge */
+        padding: 5px 10px;
+        border: none;
+        font-weight: bold;
+        position: absolute;  /* 👈 Take it out of normal flow */
+        z-index: 10;         /* 👈 Ensure it is above the iframe */
+    " onclick="this.closest('dialog').close()">x</button>
+   <script type="text/javascript">
+  /* Configure at https://www.betterplace.org/de/manage/projects/138560-3d-druck-und-elektronik-ag/fundraising_events_promoters */
+  var _betterplace_fundraising_event_promoters = _betterplace_fundraising_event_promoters || [];
+  // var _betterplace_fundraising_event_promoter_max_width = 600; /* Custom iframe-tag-width, integer */
+  var _betterplace_fundraising_event_promoter_config = {
+    project_id: 138560,
+    lang: 'de',
+    max_width: window._betterplace_fundraising_event_promoter_max_width
+  };
+  _betterplace_fundraising_event_promoters.push(_betterplace_fundraising_event_promoter_config);
+  (function() {
+    var betterplace = document.createElement('script'); betterplace.type = 'text/javascript'; betterplace.async = true;
+    betterplace.src = 'https://betterplace-assets.betterplace.org/assets/load_fundraising_event_promoter.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(betterplace, s);
+  })();
+</script>
+<div id="betterplace-fundraising-event-promoter-138560" style="background: transparent url('https://betterplace-assets.betterplace.org/static-images/fundraising-event-promoters/spinner.gif') 275px 20px no-repeat;">
+  <strong>
+    <a href="https://www.betterplace.org/de/fundraising-events/registration/new?project_id=138560">Registriere eine Spendenaktion auf betterplace.org und sammel Spenden für „3D-Druck und Elektronik AG“</a>
+  </strong>
+</div>
+
+</dialog>
+<button onclick="document.querySelector('dialog').showModal()"
+style="
+    width: 540px; /* Increased size to accommodate padding and border */
+    max-width: 90vw; /* Make it responsive */
+    ">🙏 Direkt Spenden 🙏</button>
+</body>
+</html>
