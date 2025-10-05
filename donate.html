@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spenden</title>
+</head>
+<body>
+<dialog style="
+    width: 540px; /* Increased size to accommodate padding and border */
+    max-width: 90vw; /* Make it responsive */
+    height: 540px; 
+    padding: 0; /* Remove dialog padding so iframe and button are at the edge */
+    ">
+<button style="
+
+        top: 0;              /* 👈 Align to top edge */
+        right: 0;            /* 👈 Align to right edge */
+        padding: 5px 10px;
+        border: none;
+        font-weight: bold;
+        position: absolute;  /* 👈 Take it out of normal flow */
+        z-index: 10;         /* 👈 Ensure it is above the iframe */
+    " onclick="this.closest('dialog').close()">x</button>
+   <iframe width="500px" height="500" src="https://www.betterplace.org/de/donate/platform/projects/138560-3d-druck-und-elektronik-ag"></iframe>
+</dialog>
+<button onclick="document.querySelector('dialog').showModal()"
+style="
+    width: 540px; /* Increased size to accommodate padding and border */
+    max-width: 90vw; /* Make it responsive */
+    ">🙏 Direkt Spenden 🙏</button>
+</body>
+</html>
