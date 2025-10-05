@@ -2,4 +2,4 @@
 
 ## Donate
 
-[Donate Page](donate.html) - Direct donation page with embedded donation form
+[Donate Page](docs/donate.html) - Direct donation page with embedded donation form
