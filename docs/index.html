@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Sniplets</title>
+    <title>HTML Snippets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .description {
+            color: #666;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>HTML Sniplets</h1>
+    <h1>HTML Snippets</h1>
     
-    <h2>Donate</h2>
-    <p><a href="donate.html">Donate Page</a> - Direct donation page with embedded donation form as iframe</p>
+    <h2>Donate Pages</h2>
+    <ul>
+        <li>
+            <a href="donate.html">🙏 Donate Page (Direct iFrame)</a>
+            <div class="description">Direct donation page with embedded iframe (may be blocked by browser security)</div>
+        </li>
+        <li>
+            <a href="donate_with_script.html">🙏 Donate Page (JavaScript Embed)</a>
+            <div class="description">Direct donation page using betterplace.org's official JavaScript embed code</div>
+        </li>
+    </ul>
 </body>
 </html>
