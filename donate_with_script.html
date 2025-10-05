@@ -22,7 +22,10 @@
         position: absolute;  /* 👈 Take it out of normal flow */
         z-index: 10;         /* 👈 Ensure it is above the iframe */
     " onclick="this.closest('dialog').close()">x</button>
-   <iframe width="500px" height="500" src="https://www.betterplace.org/de/donate/platform/projects/138560-3d-druck-und-elektronik-ag"></iframe>
+   <div id="betterplace_donation_iframe" style="background: transparent url('https://www.betterplace.org/assets/new_spinner.gif') 275px 20px no-repeat;">
+       <strong><a href="https://www.betterplace.org/de/donate/platform/projects/138560-3d-druck-und-elektronik-ag">Jetzt Spenden für „3D-Druck und Elektronik AG" bei unserem Partner betterplace.org</a></strong>
+   </div>
+   <script src="https://www.betterplace.org/de/projects/138560-3d-druck-und-elektronik-ag/iframe_donation_form.js"></script>
 </dialog>
 <button onclick="document.querySelector('dialog').showModal()"
 style="
