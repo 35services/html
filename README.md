@@ -1,4 +1,4 @@
-# HTML Files
+# HTML sniplets
 
 ## Donate
 
